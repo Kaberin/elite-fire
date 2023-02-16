@@ -1,0 +1,23 @@
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./hero.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #070707;
+  width: 100vw;
+  overflow: hidden;
+}
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #070707;
+  padding-top: 4.5rem;
+}

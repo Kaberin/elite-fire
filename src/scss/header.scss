@@ -1,0 +1,106 @@
+.header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.logo {
+  width: 28rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 3.9rem;
+  &__desc {
+    font-family: "LabGrotesque", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05em;
+    color: #6d6d6d;
+  }
+  &__title {
+    font-family: "ScaniaSans", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.nav {
+  font-family: "LabGrotesque", sans-serif;
+  display: flex;
+  gap: 4.6rem;
+  &__link {
+    text-decoration: none;
+    color: #949494;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    &:hover {
+      color: rgba(255, 207, 122, 1);
+    }
+  }
+}
+
+.phoneIcon {
+  width: 5rem;
+  height: 5rem;
+  background: rgba(255, 207, 122, 1);
+  position: relative;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 4.5rem;
+    height: 10.4rem;
+    position: absolute;
+    bottom: -140%;
+    left: -30%;
+    background: linear-gradient(
+      270.21deg,
+      rgba(249, 139, 77, 0.8) 18.08%,
+      rgba(255, 103, 82, 0.8) 68.72%
+    );
+    filter: blur(25px);
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    width: 4.5rem;
+    height: 10.4rem;
+    position: absolute;
+    display: block;
+    background: linear-gradient(
+      270.21deg,
+      rgba(255, 217, 196, 0.8) 18.08%,
+      rgba(255, 255, 255, 0.8) 68.72%
+    );
+    filter: blur(25px);
+    top: -140%;
+    right: -30%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navAndIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
