@@ -15,7 +15,17 @@
 }
 
 @font-face {
-  font-family: "ScaniaSans";
+  font-family: "ScaniaSansHL";
   src: url("../fonts/ScaniaSans/ScaniaSansCYHeadline-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ScaniaSans;
+  src: url("../fonts/ScaniaSans/ScaniaSansCY-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "ScaniaSans";
+  src: url("../fonts/ScaniaSans/ScaniaSansCY-Regular.ttf");
   font-weight: 400;
 }

@@ -1,0 +1,55 @@
+.smart {
+  color: white;
+  &__line {
+    width: 3rem;
+    display: inline-block;
+    transform: translateY(-1.3rem);
+  }
+  &__title {
+    font-family: "LabGrotesque";
+    font-weight: 250;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      247.29deg,
+      #ffffff 35.25%,
+      rgba(255, 255, 255, 0) 104.81%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 3.2rem;
+  }
+  &__desc {
+    text-align: center;
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3.3rem;
+  }
+  &__fireplace {
+    background: url("../img/fireplace3.png");
+    height: 60rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-3rem);
+  }
+  &__adv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rem 0 22rem;
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 33px;
+    position: relative;
+    top: 35rem;
+    color: #464239;
+  }
+}

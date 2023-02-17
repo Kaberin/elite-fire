@@ -1,0 +1,139 @@
+.fire {
+  color: white;
+  font-family: "LabGrotesque";
+  margin-bottom: 22.5rem;
+  &__title {
+    font-weight: 250;
+    text-align: center;
+    display: block;
+    width: 68rem;
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  &__desc {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: block;
+    width: 55rem;
+    margin: 0 auto;
+  }
+  &__img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  &__img-wrapper {
+    position: relative;
+  }
+  &__advantages {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.adv-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  &__info {
+    display: inline-block;
+    width: 16rem;
+    font-family: "LabGrotesque";
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.img {
+  &__effect1 {
+    position: absolute;
+    width: 15.6rem;
+    height: 9.6rem;
+    background: rgba(255, 155, 82, 0.71);
+    filter: blur(50px);
+    border-radius: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    opacity: 0.5;
+  }
+  &__effect2 {
+    position: absolute;
+    width: 15.6rem;
+    height: 9.6rem;
+    background: rgba(255, 155, 82, 0.71);
+    filter: blur(50px);
+    border-radius: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    opacity: 0.5;
+  }
+  &__effect3 {
+    position: absolute;
+    width: 21.4rem;
+    height: 13.2rem;
+    background: rgba(255, 155, 82, 0.71);
+    filter: blur(50px);
+    border-radius: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40%;
+    opacity: 0.5;
+  }
+  &__effect4 {
+    position: absolute;
+    left: 30%;
+    transform: translateY(-60%);
+    top: 50%;
+    width: 35rem;
+    height: 35rem;
+    background: rgba(245, 157, 93, 0.45);
+    filter: blur(125px);
+    border-radius: 300px;
+    transform: rotate(135deg);
+    opacity: 0.5;
+  }
+  &__effect5 {
+    position: absolute;
+    bottom: -30%;
+    width: 50rem;
+    height: 50rem;
+    background: rgba(255, 209, 128, 0.23);
+    filter: blur(125px);
+    border-radius: 300px;
+    transform: rotate(135deg);
+  }
+  &__effect6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 34rem;
+    background: rgba(255, 209, 128, 0.23);
+    filter: blur(75px);
+    border-radius: 300px;
+  }
+  &__effect7 {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+    height: 55rem;
+    background: rgba(255, 209, 128, 0.23);
+    filter: blur(75px);
+    border-radius: 300px;
+  }
+}

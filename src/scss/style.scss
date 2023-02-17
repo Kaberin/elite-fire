@@ -1,6 +1,9 @@
 @import "./fonts.scss";
 @import "./header.scss";
 @import "./hero.scss";
+@import "./fire.scss";
+@import "./refueling.scss";
+@import "./smart.scss";
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +13,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #070707;
+  background-color: #1d1d1c;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container {
   width: 120rem;
   margin: 0 auto;
   height: 100vh;
-  background-color: #070707;
+  background-color: #1d1d1c;
   padding-top: 4.5rem;
 }
