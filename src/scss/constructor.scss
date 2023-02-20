@@ -1,0 +1,286 @@
+.constructor {
+  margin-bottom: 10rem;
+  &__left-wrapper {
+    padding-top: 20px;
+    position: relative;
+  }
+  & > div {
+    display: grid;
+    grid-template-columns: 53.4rem 1fr;
+    grid-column-gap: 8.5rem;
+    width: 100%;
+  }
+  &__title {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 250;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      235.41deg,
+      #ffffff 28.47%,
+      rgba(255, 255, 255, 0.18) 91.88%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6.7rem;
+  }
+  &__img {
+    border-radius: 0.2rem;
+    margin-bottom: 5.8rem;
+  }
+  &__info {
+    display: flex;
+    gap: 19rem;
+    position: absolute;
+    align-items: flex-end;
+    bottom: 0;
+    & > div {
+      font-family: "LabGrotesque";
+      & > p {
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 5.5rem;
+        letter-spacing: 0.135em;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, 0.5);
+      }
+      & > span {
+        font-family: "LabGrotesque";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+
+        letter-spacing: 0.135em;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  &__range {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(255, 207, 122, 1);
+    height: 0;
+    color: white;
+    position: relative;
+    width: 80%;
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 55px;
+    transform: translate(50px, -20px);
+    &::before {
+      content: "0.5 м";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -50px;
+    }
+    &::after {
+      content: "10м";
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: rgba(255, 207, 122, 1);
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        cursor: grab;
+      }
+    }
+    &::-moz-range-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: rgba(255, 207, 122, 1);
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        cursor: grab;
+      }
+    }
+  }
+  &__leave-bid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div {
+      & > h4 {
+        font-family: "LabGrotesque";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 55px;
+        letter-spacing: 0.135em;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, 0.5);
+      }
+      & > span {
+        font-family: "LabGrotesque";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+
+        color: #ffcf7a;
+      }
+    }
+    & > button {
+      width: 25.4rem;
+    }
+    & > button > p {
+      position: relative;
+      z-index: 2;
+      font-family: "LabGrotesque";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.color {
+  background-color: #b8542a;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.range {
+  font-family: "LabGrotesque";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 55px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transform: translateX(50px);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.face-panel {
+  &__title {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 5.5rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__slider {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 2.2rem;
+    & > .arr {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__slides {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+  }
+  &__additional {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 14.3rem;
+    grid-row-gap: 1.4rem;
+    justify-items: space-between;
+    justify-content: space-between;
+    font-family: "LabGrotesque";
+    margin-bottom: 8rem;
+    & > label {
+      display: flex;
+      width: 150px;
+      align-items: center;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 3rem;
+      text-align: right;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    & > p {
+      margin-right: 40px;
+    }
+  }
+}
+
+.slide {
+  background-color: #464239;
+  width: 9px;
+  height: 1px;
+  &__hl {
+    background-color: #ffcf7a;
+    width: 9px;
+    height: 1px;
+  }
+}
+
+.slider-wrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(206, 183, 135, 1);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../icons/checked.svg");
+    background-size: 8px 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(206, 183, 135, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 2px;
+    transition: 0.2s ease-in;
+  }
+}
+
+.real-checkbox {
+  width: 0;
+  height: 0;
+  display: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}

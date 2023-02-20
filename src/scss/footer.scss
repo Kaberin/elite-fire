@@ -1,0 +1,128 @@
+.footer {
+  height: 530px;
+  width: 100vw;
+  background-color: black;
+
+  &__hr {
+    position: absolute;
+    width: 200vw;
+    left: -100%;
+    border-color: rgba(35, 35, 35, 1);
+  }
+  &__left {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-row-gap: 50px;
+    width: 70%;
+    grid-column-gap: 200px;
+  }
+  &__contact {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 36px;
+    color: #949494;
+  }
+  &__link {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
+    color: #ffffff;
+    &_phone {
+      margin-bottom: 61px;
+      font-size: 36px;
+    }
+    &_email {
+      color: #ffcf7a;
+    }
+  }
+  &__title {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      231.91deg,
+      #ffffff 37.36%,
+      rgba(255, 255, 255, 0) 110.46%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 71px;
+  }
+  &__button {
+    border: none;
+    border: 1px solid rgba(206, 183, 135, 1);
+    background-color: black;
+    color: white;
+    width: 279px;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-family: "ScaniaSansHL";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 70px;
+
+    letter-spacing: 0.105em;
+
+    color: #ffffff;
+  }
+  &__agreement {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #6d6d6d;
+  }
+}
+
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 72px;
+  color: white;
+  font-family: "LabGrotesque";
+}
+
+.wrp {
+  display: flex;
+  gap: 110px;
+  align-items: center;
+}
+.comp {
+  display: flex;
+  gap: 47px;
+  align-items: center;
+  & > p {
+    font-family: "LabGrotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #6d6d6d;
+  }
+}
